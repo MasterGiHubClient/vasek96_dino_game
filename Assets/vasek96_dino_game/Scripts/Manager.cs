@@ -27,7 +27,7 @@ public class Manager : MonoBehaviour
 
     const int maxLines = 5;
 
-    const float initOffsetX = 4.0f;
+    const float initOffsetX = 13.0f;
     const float obstacleOffsetX = 6.0f;
 
     const string savekey = "leaders";
@@ -51,10 +51,6 @@ public class Manager : MonoBehaviour
 
     [Space(10)]
     [SerializeField] Transform healthBar;
-
-    [Space(10)]
-    [SerializeField] Sprite full;
-    [SerializeField] Sprite empty;
 
     [Space(10)]
     [SerializeField] Text leadersText;
@@ -154,7 +150,7 @@ public class Manager : MonoBehaviour
 
     float GetRandY()
     {
-        return Random.Range(-2.68f, 2.68f);
+        return Random.Range(0, 0);
     }
 
     void UpdateObstaclePositions()
@@ -182,11 +178,6 @@ public class Manager : MonoBehaviour
 
         healthBar.gameObject.SetActive(false);
         scoresText.gameObject.SetActive(false);
-
-        foreach(Transform t in healthBar)
-        {
-            t.GetComponent<Image>().sprite = full;
-        }
 
         healthCount = healthBar.childCount;
 
@@ -265,8 +256,6 @@ public class Manager : MonoBehaviour
             player.SetAlive(false);
             ResetObstacles();
         }
-
-        healthBar.GetChild(healthCount).GetComponent<Image>().sprite = empty;
     }
 
     IEnumerator Timer()
