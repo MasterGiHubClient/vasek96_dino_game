@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Русская рулетка онлайн</title>
+    <title>YogaPetz</title>
     <link rel="stylesheet" href="Data/style.css" />
-    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
   </head>
   <body style="text-align: center;">
     <canvas id="unity-canvas"></canvas>
     <script>
       
       let unityGame;
-      let appID = 51434130;
 
       const canvas = document.querySelector('#unity-canvas');
       const buildUrl = 'Build';
@@ -24,7 +22,7 @@
         codeUrl: buildUrl + '/WebGL.wasm.br',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: 'DefaultCompany',
-        productName: 'Русская рулетка онлайн',
+        productName: 'YogaPetz',
         productVersion: '0.1',
       };
 
@@ -34,12 +32,7 @@
 
       script.onload = async () => {
         try {
-          
-          await vkBridge.send('VKWebAppInit');
-          const info = await vkBridge.send('VKWebAppGetUserInfo');
-
           unityGame = await createUnityInstance(canvas,config);
-         
         } catch (error) {
           console.log(error);
         }
