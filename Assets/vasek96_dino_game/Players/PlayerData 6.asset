@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a5066c122d4efc459a86217d28570e6, type: 3}
-  m_Name: PlayerData 1
+  m_Name: PlayerData 6
   m_EditorClassIdentifier: 
-  playerName: XING PING
-  playerSprite: {fileID: 21300000, guid: f1d15c8290f50994cbaee1dc1a219f62, type: 3}
+  playerName: MR ORANGE
+  playerSprite: {fileID: 21300000, guid: 92c41e0ee52aef1419b1d41e5e874622, type: 3}

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerData 2
   m_EditorClassIdentifier: 
   playerName: MR ORANGE
-  playerSprite: {fileID: 21300000, guid: 54f73346661dad64ca0b87a094cef84f, type: 3}
+  playerSprite: {fileID: 21300000, guid: 9dc42929a9dcb42409acf10377a40c8c, type: 3}
